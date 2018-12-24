@@ -1,0 +1,38 @@
+.audience {
+  color: $color-regular-dark;
+  text-align: center;
+
+  /* min-height: 100vh; */
+}
+
+.audience__question {
+  // font-family: $font-bold;
+  // font-size: $font-size-section-title;
+  // line-height: regular;
+}
+
+.audience__answer {
+  //   font-family: $font-semibold;
+  //   font-size: $font-size-section-subtitle;
+  //   line-height: regular;
+}
+
+.audience__answer {
+}
+
+.audience__list {
+  @extend %clear-list;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+}
+
+.audience__item {
+  flex-basis: 30%;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+}

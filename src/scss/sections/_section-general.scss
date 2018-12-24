@@ -1,0 +1,23 @@
+.section {
+  text-align: center;
+  background-color: #fff;
+}
+
+.section__content-wrapper {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.section__title {
+  font-family: $font-section-title;
+  font-size: $font-size-section-title;
+  margin-bottom: 30px;
+}
+
+.section__subtitle {
+  font-family: $font-section-subtitle;
+  font-size: $font-size-section-subtitle;
+  font-weight: 700;
+  margin-bottom: 30px;
+}

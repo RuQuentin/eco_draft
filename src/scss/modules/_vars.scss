@@ -1,0 +1,106 @@
+/* $base: #f7f6f0;
+$darken: darken(#f7f6f0, 30%);
+$back: darken(#f7f6f0, 40%); */
+
+/* ------ FONTS ------ */
+$font-title-bold: "Oswald Bold", Helvetica, Arial;
+$font-pretitle-bold: "Open Sans", Arial, Helvetica;
+$font-subtitle: "Lobster Regular", Arial, Helvetica;
+$font-banner-start: "Open Sans", Arial, Helvetica;
+$font-button: "Open Sans", Arial, Helvetica;
+$font-section-title: "Lobster Regular", Arial, Helvetica;
+$font-section-subtitle: "Open Sans", Arial, Helvetica;
+$font-regular: "Open Sans", Arial, Helvetica;
+$font-bold: "TitilliumWeb Bold", Helvetica, Arial;
+$font-semibold: "TitilliumWeb SemiBold", Helvetica, Arial;
+$font-italic: "TitilliumWeb Italic", Helvetica, Arial;
+$font-light: "TitilliumWeb Light", Helvetica, Arial;
+
+/* ----- FONT SIZES ----- */
+$font-size-banner-title: 60px;
+$font-size-banner-title-first-letter: 130px;
+$font-size-banner-regular: 34px;
+$font-size-banner-pretitle-1: 18px;
+$font-size-banner-pretitle-2: 20px;
+$font-size-banner-subtitle: 26px;
+$font-size-banner-start: 20px;
+
+$font-size-section-title: 40px;
+$font-size-section-subtitle: 34px;
+
+$font-size-program-price: 30px;
+$font-size-plan-title: 20px;
+
+$font-size-regular: 16px;
+$font-size-regular-middle: 18px;
+$font-size-button: 18px;
+$font-size-section-item-name: 24px;
+$font-size-section-quotation: 21px;
+$font-size-diagram: 50px;
+
+/* ----- LINE HEIGHTS ----- */
+$line-height-banner-title: 1;
+
+// $line-height-banner-title: 1.158;
+$line-height-section-subtitle: 1.4444;
+$line-height-section-regular-small: 1.5;
+$line-height-section-quotation: 1.4857;
+$line-height-regular: 1.2;
+
+/* ------ COLORS ------ */
+$color-regular-white: #ffffff;
+$color-regular-dark: #3c4761;
+
+$color-bg-banner-white: #ffffff;
+$color-bg-banner-green: #40a962;
+$color-banner-grey: #747474;
+$color-banner-start: #ffffff;
+$color-banner-button: #f6523c;
+// $color-banner-button: #e12b38;
+
+$color-program-values-list-border: #f6523c;
+$color-program-values-cell: #f7f2f1;
+$color-program-plan-title: #3c4761;
+$color-program-option-yes: #fa292a;
+$color-program-option-no: #3c4761;
+$color-program-option-price: #3c4761;
+
+$color-light-blue: #299ec5;
+$color-light-yellow: #ffdd99;
+$color-light-grey: #878787;
+$color-middle-purple: #87509c;
+$color-light-green: #17c2a4;
+
+// -------------------------------------------------
+
+$color-lightest-blue: #30bae7;
+$color-light-blue: #299ec5;
+$color-middle-blue: #3c5499;
+$color-dark-blue: #344b8e;
+$color-darkest-blue: #273a71;
+
+$color-light-pale: #e7f1f8;
+$color-middle-pale: #dfe8ed;
+$color-dark-pale: #bdd1df;
+
+$color-light-grey: #878787;
+$color-middle-grey: #787878;
+$color-dark-grey: #393939;
+
+$color-light-yellow: #ffdd99;
+$color-middle-yellow: #ebc985;
+
+$color-middle-purple: #87509c;
+$color-dark-purple: #643a79;
+
+$color-middle-orange: #eb7d4b;
+$color-dark-orange: #c86a40;
+
+$color-light-green: #17c2a4;
+$color-middle-green: #15c7a8;
+$color-dark-green: #14a58c;
+
+$color-middle-pink: #d74680;
+$color-dark-pink: #b73c6d;
+
+$color-red: #ff4444;

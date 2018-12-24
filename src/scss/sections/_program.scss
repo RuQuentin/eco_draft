@@ -1,0 +1,138 @@
+.program {
+  background-color: $color-dark-pale;
+  color: $color-regular-white;
+  text-align: center;
+}
+
+.program__title {
+  // font-family: $font-bold;
+  // font-size: $font-size-section-title;
+  // line-height: regular;
+}
+
+.program__paragraph-regular {
+}
+
+.program__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.program__conditions-list {
+  @extend %clear-list;
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  background-color: $color-bg-banner-green;
+  padding: 10px;
+}
+
+.program__conditions-item {
+  color: $color-regular-dark;
+  text-align: right;
+  font-size: 36px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.program__conditions-emphasise {
+  color: $color-regular-white;
+}
+
+.program__important {
+  flex-basis: 50%;
+}
+
+.program__important-title {
+  font-family: $font-section-subtitle;
+  font-size: $font-size-section-subtitle;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.program__important-list {
+  @extend %clear-list;
+  position: relative;
+  // display: flex;
+
+  justify-content: space-around;
+}
+
+.program__important-item {
+  flex-basis: 25%;
+
+  &:hover .program__important-icon-wrapper {
+    &::before {
+      transform: scale(0.8);
+    }
+
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
+
+.program__important-icon-wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: scale(1);
+    background: #f2f2f2;
+    transition: all 0.3s linear 0s;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: #fd0;
+    transition: all 0.3s linear 0s;
+  }
+}
+
+.program__important-icon {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  z-index: 5;
+}
+
+.icon__alarm {
+  background-image: url("../img/icons/icon__alarm.png");
+}
+
+.icon__homework {
+  background-image: url("../img/icons/icon__homework.png");
+}
+
+.icon__checklist {
+  background-image: url("../img/icons/icon__checklist.png");
+}
+
+.program__important-content {
+  padding: 10px 0px;
+  text-align: center;
+}

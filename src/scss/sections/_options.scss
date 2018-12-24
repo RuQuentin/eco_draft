@@ -1,0 +1,121 @@
+.options__wrapper {
+  @extend %clear-list;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  line-height: $line-height-regular;
+  margin: 0 auto;
+}
+
+.options__titles {
+  flex-basis: 70%;
+  max-width: 500px;
+  padding: 0 10px;
+
+  &:nth-last-of-type(2) {
+    display: none;
+  }
+}
+
+.options__titles-list {
+  @extend %clear-list;
+  border-top: 5px solid transparent;
+}
+
+.options__titles-cell {
+  align-items: center;
+  text-align: left;
+}
+
+.options__plan-title {
+  font-weight: 700;
+  font-size: $font-size-plan-title;
+  text-align: center;
+  color: $color-program-plan-title;
+}
+
+.options__values {
+  flex-basis: 20%;
+  min-width: 150px;
+  max-width: 300px;
+  padding: 0 10px;
+
+  &:hover .options__values-cell:not(:nth-last-of-type(1)) {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+  }
+
+  &:hover .options__values-cell:nth-of-type(1) {
+    background-color: $color-regular-dark;
+    color: $color-regular-white;
+  }
+}
+
+.options__values-list {
+  @extend %clear-list;
+  border-top: 5px solid $color-program-values-list-border;
+}
+
+.options__values-cell {
+  justify-content: center;
+  align-items: center;
+  background-color: $color-program-values-cell;
+
+  &:nth-last-of-type(1) {
+    background-color: transparent;
+  }
+}
+
+.options__cell {
+  height: 60px;
+  display: flex;
+  border-top: 1px solid grey;
+  padding: 5px;
+
+  &:nth-of-type(1) {
+    border-top: none;
+  }
+
+  &:nth-last-of-type(1) {
+    border-top: none;
+  }
+}
+
+.options__yes {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+    background-color: $color-program-option-yes;
+    background-image: url("../img/icons/icon__tick.png");
+  }
+}
+
+.options__no {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+    background-color: $color-program-option-no;
+    background-image: url("../img/icons/icon__cross.png");
+  }
+}
+
+.options__price {
+  font-weight: 700;
+  font-size: $font-size-program-price;
+  color: $color-program-option-price;
+  text-align: center;
+}
