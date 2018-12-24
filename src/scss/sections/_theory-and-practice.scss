@@ -1,0 +1,33 @@
+.theory-and-practice {
+}
+
+.theory-and-practice__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theory-and-practice__list {
+  @extend %clear-list;
+  flex-basis: 48%;
+
+  // display: flex;
+  // justify-content: space-around;
+  // margin-bottom: 30px;
+}
+
+.theory-and-practice__item {
+  // flex-basis: 48%;
+  // max-width: 500px;
+  // padding: 20px;
+}
+
+.theory-and-practice__item-emphasise {
+  display: block;
+  font-size: $font-size-theory-item-emphasise;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.theory-and-practice__conclusion {
+  flex-basis: 48%;
+}

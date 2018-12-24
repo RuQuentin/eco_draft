@@ -21,7 +21,7 @@
 
 .program__conditions-list {
   @extend %clear-list;
-  flex-basis: 50%;
+  flex-basis: 54%;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -43,7 +43,7 @@
 }
 
 .program__important {
-  flex-basis: 50%;
+  flex-basis: 44%;
 }
 
 .program__important-title {
@@ -55,68 +55,47 @@
 
 .program__important-list {
   @extend %clear-list;
-  position: relative;
-  // display: flex;
-
-  justify-content: space-around;
 }
 
 .program__important-item {
-  flex-basis: 25%;
-
-  &:hover .program__important-icon-wrapper {
-    &::before {
-      transform: scale(0.8);
-    }
-
-    &::after {
-      transform: scale(1);
-    }
-  }
-}
-
-.program__important-icon-wrapper {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
-  margin: 0 auto;
+  height: 130px;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
-    display: inline-block;
+    display: block;
+    width: 120px;
+    height: 130px;
     position: absolute;
     left: 0;
-    top: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    transform: scale(1);
-    background: #f2f2f2;
-    transition: all 0.3s linear 0s;
+    background-color: $color-program-values-list-border;
   }
 
-  &::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    transform: scale(0);
-    background-color: #fd0;
-    transition: all 0.3s linear 0s;
+  &:hover {
+    &::before {
+      background-color: $color-regular-white;
+      // transform: scale(1.1);
+    }
   }
 }
 
 .program__important-icon {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  left: 5px;
+  top: -20px;
+  width: 60px;
+  height: 60px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 80%;
   z-index: 5;
 }
 
@@ -133,6 +112,10 @@
 }
 
 .program__important-content {
-  padding: 10px 0px;
-  text-align: center;
+  position: relative;
+  color: $color-regular-dark;
+  padding-left: 70px;
+  text-align: left;
+
+  z-index: 5;
 }

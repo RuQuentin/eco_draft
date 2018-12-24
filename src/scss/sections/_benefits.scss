@@ -3,3 +3,18 @@
   color: $color-regular-white;
   text-align: center;
 }
+
+.benefits__list {
+  @extend %clear-list;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.benefits__item {
+  flex-basis: 30%;
+  max-width: 300px;
+  padding: 20px;
+}

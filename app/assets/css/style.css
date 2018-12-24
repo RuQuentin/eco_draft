@@ -440,7 +440,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   margin-right: auto; }
 
-.main-menu, .advantages__list, .audience__list, .program__conditions-list, .program__important-list, .options__wrapper, .options__titles-list, .options__values-list, .footer-socials__item {
+.main-menu, .advantages__list, .audience__list, .program__conditions-list, .program__important-list, .options__wrapper, .options__titles-list, .options__values-list, .benefits__list, .theory-and-practice__list, .footer-socials__item {
   list-style: none;
   display: inline-block; }
 
@@ -741,8 +741,8 @@ input[type="radio"].visually-hidden {
       flex-wrap: nowrap; }
 
 .program__conditions-list {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 54%;
+      flex-basis: 54%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
@@ -764,8 +764,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff; }
 
 .program__important {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%; }
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%; }
 
 .program__important-title {
   font-family: "Open Sans", Arial, Helvetica;
@@ -773,60 +773,37 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   margin-bottom: 30px; }
 
-.program__important-list {
-  position: relative;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
 .program__important-item {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-  .program__important-item:hover .program__important-icon-wrapper::before {
-    -ms-transform: scale(0.8);
-        transform: scale(0.8); }
-  .program__important-item:hover .program__important-icon-wrapper::after {
-    -ms-transform: scale(1);
-        transform: scale(1); }
-
-.program__important-icon-wrapper {
-  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
-  margin: 0 auto; }
-  .program__important-icon-wrapper::before {
+  height: 130px;
+  margin-bottom: 20px; }
+  .program__important-item:last-of-type {
+    margin-bottom: 0; }
+  .program__important-item::before {
     content: "";
-    display: inline-block;
+    display: block;
+    width: 120px;
+    height: 130px;
     position: absolute;
     left: 0;
-    top: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    -ms-transform: scale(1);
-        transform: scale(1);
-    background: #f2f2f2;
-    transition: all 0.3s linear 0s; }
-  .program__important-icon-wrapper::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    -ms-transform: scale(0);
-        transform: scale(0);
-    background-color: #fd0;
-    transition: all 0.3s linear 0s; }
+    background-color: #f6523c; }
+  .program__important-item:hover::before {
+    background-color: #ffffff; }
 
 .program__important-icon {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  left: 5px;
+  top: -20px;
+  width: 60px;
+  height: 60px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 80%;
   z-index: 5; }
 
 .icon__alarm {
@@ -839,8 +816,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icons/icon__checklist.png"); }
 
 .program__important-content {
-  padding: 10px 0px;
-  text-align: center; }
+  position: relative;
+  color: #3c4761;
+  padding-left: 70px;
+  text-align: left;
+  z-index: 5; }
 
 .options__wrapper {
   display: -ms-flexbox;
@@ -945,6 +925,41 @@ input[type="radio"].visually-hidden {
   background-color: #17c2a4;
   color: #ffffff;
   text-align: center; }
+
+.benefits__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px; }
+
+.benefits__item {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  max-width: 300px;
+  padding: 20px; }
+
+.theory-and-practice__wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.theory-and-practice__list {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%; }
+
+.theory-and-practice__item-emphasise {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px; }
+
+.theory-and-practice__conclusion {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%; }
 
 .conclusion {
   background-color: #eb7d4b;
