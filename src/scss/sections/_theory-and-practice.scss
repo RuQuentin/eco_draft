@@ -16,9 +16,47 @@
 }
 
 .theory-and-practice__item {
-  // flex-basis: 48%;
-  // max-width: 500px;
-  // padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 130px;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    right: 0;
+    background-color: $color-program-values-list-border;
+  }
+}
+
+.theory-and-practice__icon {
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+  top: -20px;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  z-index: 5;
+}
+
+.theory-and-practice__content {
+  position: relative;
+  color: $color-regular-dark;
+  padding-right: 70px;
+  text-align: right;
+
+  z-index: 5;
 }
 
 .theory-and-practice__item-emphasise {
@@ -28,6 +66,24 @@
   margin-bottom: 5px;
 }
 
-.theory-and-practice__conclusion {
+.theory-and-practice__conclusion-wrapper {
   flex-basis: 48%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  background-color: $color-bg-banner-green;
+  padding: 10px 30px;
 }
+
+.theory-and-practice__conclusion {
+  color: $color-regular-dark;
+  text-align: left;
+  font-size: 30px;
+}
+
+.theory-and-practice__conclusion-emphasise {
+  display: inline;
+  color: $color-regular-white;
+}
+
+
