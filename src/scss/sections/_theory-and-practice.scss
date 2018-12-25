@@ -29,11 +29,13 @@
   &::before {
     content: "";
     display: block;
-    width: 120px;
+    width: 150px;
     height: 130px;
     position: absolute;
     right: 0;
     background-color: $color-program-values-list-border;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
   }
 }
 

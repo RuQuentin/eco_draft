@@ -725,7 +725,7 @@ input[type="radio"].visually-hidden {
       flex-basis: 30%;
   max-width: 300px;
   padding: 20px;
-  text-align: center; }
+  text-align: left; }
 
 .program {
   background-color: #bdd1df;
@@ -789,8 +789,6 @@ input[type="radio"].visually-hidden {
     position: absolute;
     left: 0;
     background-color: #f6523c; }
-  .program__important-item:hover::before {
-    background-color: #ffffff; }
 
 .program__important-icon {
   position: absolute;
@@ -962,11 +960,13 @@ input[type="radio"].visually-hidden {
   .theory-and-practice__item::before {
     content: "";
     display: block;
-    width: 120px;
+    width: 150px;
     height: 130px;
     position: absolute;
     right: 0;
-    background-color: #f6523c; }
+    background-color: #f6523c;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px; }
 
 .theory-and-practice__icon {
   position: absolute;

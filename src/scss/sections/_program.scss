@@ -76,12 +76,12 @@
     background-color: $color-program-values-list-border;
   }
 
-  &:hover {
-    &::before {
-      background-color: $color-regular-white;
-      // transform: scale(1.1);
-    }
-  }
+  // &:hover {
+  //   &::before {
+  //     background-color: $color-regular-white;
+  //     // transform: scale(1.1);
+  //   }
+  // }
 }
 
 .program__important-icon {
