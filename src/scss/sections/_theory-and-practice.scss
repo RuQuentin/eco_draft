@@ -1,7 +1,23 @@
 .theory-and-practice {
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: -120px;
+    width: 50%;
+    height: 556px;
+    display: inline-block;
+    background-image: url('../img/left-corner__background.png');
+    background-repeat: no-repeat;
+  }
 }
 
 .theory-and-practice__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }

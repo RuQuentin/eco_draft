@@ -24,9 +24,37 @@
 }
 
 @font-face {
-  font-family: "TitilliumWeb Regular";
-  src: url("../fonts/TitilliumWeb-Regular.ttf");
+  font-family: "Pacifico-Regular";
+  src: url("../fonts/Pacifico-Regular.ttf");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../fonts/fa-solid-900.ttf");
+  font-weight: 900;
   font-style: normal;
 }
 

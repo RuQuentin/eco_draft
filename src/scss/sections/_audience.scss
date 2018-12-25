@@ -2,8 +2,23 @@
   color: $color-regular-dark;
   text-align: center;
 
-  /* min-height: 100vh; */
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: -80px;
+    width: 50%;
+    height: 556px;
+    display: inline-block;
+    background-image: url('../img/left-corner__background.png');
+    background-repeat: no-repeat;
+  }
 }
+
+
 
 .audience__question {
   // font-family: $font-bold;
@@ -22,10 +37,12 @@
 
 .audience__list {
   @extend %clear-list;
+  position: relative;
   text-align: left;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  z-index: 5;
 
   margin-bottom: 30px;
 }

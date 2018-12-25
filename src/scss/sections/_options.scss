@@ -1,5 +1,11 @@
+.options {
+
+
+}
+
 .options__wrapper {
   @extend %clear-list;
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;

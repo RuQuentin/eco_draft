@@ -18,7 +18,7 @@
 }
 
 .intro__first-block-content-wrapper {
-  width: 25%;
+  width: 28%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,13 +28,13 @@
 .intro__first-block-question {
   text-align: center;
   margin-bottom: 10px;
-  font-weight: 700;
-  font-family: $font-section-title;
+  font-size: 18px;
+  font-family: $font-section-subtitle;
 }
 
 .intro__first-block-content {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .intro__challenge {

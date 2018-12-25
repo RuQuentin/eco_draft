@@ -1,18 +1,24 @@
 .section {
   text-align: center;
-  background-color: #fff;
 }
 
 .section__content-wrapper {
+  position: relative;
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
+  z-index: 1;
 }
 
 .section__title {
   font-family: $font-section-title;
   font-size: $font-size-section-title;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  z-index: 5;
+}
+
+.section__title-empasise {
+  color: #eb3007;
 }
 
 .section__subtitle {
@@ -20,4 +26,5 @@
   font-size: $font-size-section-subtitle;
   font-weight: 700;
   margin-bottom: 30px;
+  z-index: 5;
 }
