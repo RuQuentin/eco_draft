@@ -14,11 +14,13 @@
     background-image: url("../img/quote__background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(30%) blur(2px);
+    background-position: center;
+    // background-attachment: fixed;
+    filter: brightness(30%) blur(3px);
   }
 }
 
-.quote__wrapper {
+.quote__section {
   display: block;
   position: relative;
   max-width: 600px;
@@ -54,7 +56,6 @@
   color: $color-regular-white;
   margin-bottom: 10px;
   font-size: 18px;
-
 
   &:last-of-type {
     margin-bottom: 20px;
