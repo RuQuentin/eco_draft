@@ -2,6 +2,11 @@
   background-color: $color-light-blue;
   color: $color-regular-white;
   text-align: center;
+
+  .section__content-wrapper {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 }
 
 .advantages__title {

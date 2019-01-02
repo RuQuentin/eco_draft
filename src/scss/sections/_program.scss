@@ -13,6 +13,7 @@
     height: 464px;
     background-image: url('../img/pattern-waves-grey__background.png');
     background-repeat: no-repeat;
+    transform: scaleY(0.5) translateY(50%);
   }
 
   &:after {
