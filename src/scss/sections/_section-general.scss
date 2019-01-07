@@ -16,21 +16,31 @@
   font-family: $font-section-title;
   font-size: $font-size-section-title;
   z-index: 5;
+  text-transform: uppercase;
 
   &:nth-last-of-type(1) {
     margin-bottom: 30px;
 
     &::after {
       display: block;
-      content: '';
-      width: 149px;
-      height: 35px;
-      background-image: url('../img/section__underline.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      content: "";
+      width: 70px;
+      border-bottom: 1px solid #71B626;
+      height: 4px;
       margin: 0 auto;
       padding-top: 20px
+
+
+      // display: block;
+      // content: '';
+      // width: 149px;
+      // height: 35px;
+      // background-image: url('../img/section__underline.png');
+      // background-size: contain;
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // margin: 0 auto;
+      // padding-top: 20px
     }
   }
 }
@@ -45,4 +55,6 @@
   font-weight: 700;
   margin-bottom: 30px;
   z-index: 5;
+
+  text-transform: uppercase;
 }

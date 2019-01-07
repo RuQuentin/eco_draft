@@ -1,6 +1,7 @@
 .theory-and-practice {
-  background-color: $color-light-blue;
+  background-color: #242424;
   overflow: hidden;
+  color: white;
 
   .section__content-wrapper {
     padding-top: 10%;
@@ -49,13 +50,22 @@
   &::before {
     content: "";
     display: block;
-    width: 150px;
+    // width: 150px;
+    width: 130px;
     height: 130px;
     position: absolute;
     right: 0;
-    background-color: $color-program-values-list-border;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
+    // background-color: #eb3007;
+    // border-top-right-radius: 60px;
+    // border-bottom-left-radius: 60px;
+
+    border: 4px solid #720C32;
+
+    z-index: -5;
+  }
+
+  &:hover .theory-and-practice__content {
+    padding-right: 30px;
   }
 }
 
@@ -74,8 +84,8 @@
 
 .theory-and-practice__content {
   position: relative;
-  color: $color-regular-dark;
-  padding-right: 70px;
+  color: white;
+  padding-right: 50px;
   text-align: right;
 
   z-index: 5;
@@ -86,6 +96,8 @@
   font-size: $font-size-theory-item-emphasise;
   font-weight: 700;
   margin-bottom: 5px;
+
+  color: #D77A9C;
 }
 
 .theory-and-practice__conclusion-wrapper {
@@ -93,19 +105,20 @@
   font-weight: 700;
   display: flex;
   align-items: center;
-  background-color: $color-bg-banner-green;
+  border: 4px solid #72b626;
+  // background-color: $color-bg-banner-green;
   padding: 10px 30px;
 }
 
 .theory-and-practice__conclusion {
-  color: $color-regular-dark;
+  color: white;
   text-align: left;
   font-size: 30px;
 }
 
 .theory-and-practice__conclusion-emphasise {
   display: inline;
-  color: $color-regular-white;
+  color: #44760C;
 }
 
 
